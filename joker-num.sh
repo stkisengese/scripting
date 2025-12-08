@@ -1,4 +1,5 @@
-#!/bin/bash
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+  #!/bin/bash
 
 # ----- Validate arguments -----
 if [ $# -ne 1 ]; then
@@ -51,3 +52,5 @@ done
 # ----- If all tries used -----
 echo "You lost, the number was $secret"
 exit 0
+
+fi
